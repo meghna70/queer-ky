@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8a2b18e51.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c8a2b18e51.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Fredoka&family=Mulish:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  
+    <button aria-controls="nav" aria-expanded="false" class="hide-nav-btn phn"><span> menu</span></button>
+    <nav id="nav" data-visible="false"> 
+         <ul class="left" style="list-style-type: none;">
+          <img src="logo-removebg-preview.png" alt="logo">
+          <p> Queerky </p>
+          
+           <div><input class="search" type="text" placeholder="find people,tags,pictures.."></div>
+          
+         </ul>
+         <ul class="right" style="list-style-type: none;">
+            <li><a href="#"><i class="fa fa-solid fa-calendar"></i></a></li>
+            <li><a href="#"><i class="fa fa-solid fa-bell"></i></a></li>
+           <li><a href="#"><i class="fa fa-solid fa-user"></i></a></li>
+         </ul>
+     </nav>
+     <main>
+        <!-- ___________________________________ UPLOAD BOX ____________________________________________ -->
+       
+        <div class="upload-container">
+          <div>
+           <div class="upload">
+             <span>X</span>
+             <img src="upload.png" height="100px" width="100px">
+             <p>Drag files to upload or </p>
+             
+               <input class="upload-input" type="file" name="upload" multiple>
+               <button onclick="" class="upload-btn" name="upload">Choose file </button>
+               <span class="upload-label"></span>
+             
+           </div>
+          </div>
+        </div>
+       <div class="container">
+         
+         <!-- username -->
+         <div class="l">
+           <a class="profile">
+             <img src="dp2.jpg" alt="p">
+             <div  class="username">
+               <h4>User</h4>
+               <p><i>@username</i></p>
+             </div>
+           </a>
+           <!-- side bar -->
+            <div class="menu">
+              <a  href="#nav"><span class="home active">home</span></a>        
+              <a><span class="explore">explore</span></a>
+              <a href="#r"class="sidebar notif"  onclick="showPanel(2)"><span >notification<i class="phn fa fas fa-angle-down"></i></span>
+              </a>
+              <!-- end of sidebar -->
+              <a><span href="#r" class="your-events" onclick="showPanel(1)"> your events </span></a>
+              <a> <span href="#r" class="messages" onclick="showPanel(0)">messages</span></a>
+              <a><span class="settings">settings</span></a>
+              <li style="list-style-type: none;"><button class="new-post"><i class="fa fa-solid fa-plus"></i>New post</button></li>
+            </div>
+
+         </div>
+         <!-- ___________________________________LEFT DONE ____________________________________________ -->
+      
+      
+         <!-- ___________________________________MIDDLE ____________________________________________ -->
+
+     <div class="m">
+
+        <div class="story-container">
+          <!-- ___________________________________ #1 STORY____________________________________________ -->
+        
+         <div class="stories">
+            <div class="story">
+              <div class="profile-photo">
+                <img class="notif-img" src="dp6.jpg">
+                <span>chill_cat</span>
+              </div>
+             
+            </div>
+         </div>
+          <!-- ___________________________________ #2 STORY____________________________________________ -->
+        <div class="stories">
+        <div class="story">
+          <div class="profile-photo">
+            <img  class="notif-img" src="dp7.jpg">
+            <span>Krystyna</span>
+          </div>
+        </div>
+     </div>
+
+         <!-- ___________________________________ #3 STORY____________________________________________ -->
+        <div class="stories">
+          <div class="story">
+        <div class="profile-photo">
+          <img  class="notif-img" src="dp8.jpg">
+          <span>River90</span>
+        </div>
+      
+      </div>
+      </div>
+
+     <!-- ___________________________________ #4 STORY____________________________________________ -->
+        <div class="stories">
+      <div class="story">
+      <div class="profile-photo">
+        <img  class="notif-img" src="dp9.jpg">
+        <span>Meztli</span>
+      </div>
+        </div>
+      </div>
+
+    
+    <!-- ___________________________________ #5 STORY____________________________________________ -->
+    <div class="stories">
+      <div class="story">
+      <div class="profile-photo">
+        <img  class="notif-img" src="dp3.jpg">
+        <span>miyamura</span>
+      </div>
+        </div>
+      </div>
+
+       <!-- ___________________________________ #6 STORY____________________________________________ -->
+    <div class="stories">
+      <div class="story">
+      <div class="profile-photo">
+        <img  class="notif-img" src="dp9.jpg">
+        <span>askeladd</span>
+      </div>
+        </div>
+      </div>
+
+       <!-- ___________________________________ #7 STORY____________________________________________ -->
+    <div class="stories">
+      <div class="story">
+      <div class="profile-photo">
+        <img  class="notif-img" src="dp8.jpg">
+        <span>thorfinn</span>
+      </div>
+        </div>
+      </div>
+       <!-- ___________________________________ #8 STORY____________________________________________ -->
+    <div class="stories">
+      <div class="story">
+      <div class="profile-photo">
+        <img  class="notif-img" src="dp3.jpg">
+        <span>user123</span>
+      </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ___________________________________END OF STORY____________________________________________ -->
+
+     <!-- ___________________________________ FORM ____________________________________________ -->
+     <form class="create-post">
+         <img class="notif-img" src="dp1.jpg">
+         <input type="text" placeholder="post something..." id="create-post">
+        <button type="button" class="create-btn"> POST </button>
+        </form>
+      
+       <!-- ___________________________________ FEED ____________________________________________ -->
+      <div class="feeds">
+           <!-- ___________________________________ #1 FEED ____________________________________________ -->
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div >
+                <img class="profile-photo" src="dp4.jpg">
+              </div>
+              <div class="ingo">
+                <h3>Kieran78</h3>
+                <small>feeling hopeful  12 mins ago</small>
+              </div>
+              <span class="edit"></span>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="dp4.jpg">
+          </div>
+
+          <div class="action-btn">
+            <div class="i-btn">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="far fa-comment"></i></span>
+              <span><i class="fas fa-paper-plane"></i></span>
+            </div>
+            <div class="report">
+              <span><i class="fa fa-solid fa-flag"></i></span>
+            </div>
+          </div>
+          <div class="caption">
+            <b data-name="Kieran78">Kieran78</b> #lgbtq #happy
+           </div>
+        </div>
+         
+        <!-- ___________________________________ #2 FEED ____________________________________________ -->
+
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div >
+                <img class="profile-photo" src="dp5.jpg">
+              </div>
+              <div class="ingo">
+                <h3>Kieran78</h3>
+                <small>feeling hopeful  12 mins ago</small>
+              </div>
+              <span class="edit"></span>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="dp5.jpg">
+          </div>
+
+          <div class="action-btn">
+            <div class="i-btn">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="far fa-comment"></i></span>
+              <span><i class="fas fa-paper-plane"></i></span>
+            </div>
+            <div class="report">
+              <span><i class="fa fa-solid fa-flag"></i></span>
+            </div>
+          </div>
+          <div class="caption">
+            <b data-name="moria90">moria90</b> #lgbtq #happy
+           </div>
+        </div>
+        
+
+         <!-- ___________________________________ #3 FEED ____________________________________________ -->
+
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div >
+                <img class="profile-photo" src="dp4.jpg">
+              </div>
+              <div class="ingo">
+                <h3>creek_schitt</h3>
+                <small>feeling hopeful  12 mins ago</small>
+              </div>
+              <span class="edit"></span>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="dp7.jpg">
+          </div>
+
+          <div class="action-btn">
+            <div class="i-btn">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="far fa-comment"></i></span>
+              <span><i class="fas fa-paper-plane"></i></span>
+            </div>
+            <div class="report">
+              <span><i class="fa fa-solid fa-flag"></i></span>
+            </div>
+          </div>
+          <div class="caption">
+            <b data-name="creek_schitt">creek_schitt</b> #lgbtq #happy
+           </div>
+        </div>
+
+
+         <!-- ___________________________________ #4 FEED ____________________________________________ -->
+        <div class="feed">
+          <div class="head">
+            <div class="user">
+              <div >
+                <img class="profile-photo" src="dp3.jpg">
+              </div>
+              <div class="ingo">
+                <h3>Kieran78</h3>
+                <small>feeling hopeful  12 mins ago</small>
+              </div>
+              <span class="edit"></span>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="dp9.jpg">
+          </div>
+
+          <div class="action-btn">
+            <div class="i-btn">
+              <span><i class="far fa-heart"></i></span>
+              <span><i class="far fa-comment"></i></span>
+              <span><i class="fas fa-paper-plane"></i></span>
+            </div>
+            <div class="report">
+              <span><i class="fa fa-solid fa-flag"></i></span>
+            </div>
+          </div>
+          <div class="caption">
+            <b data-name="Snowy_day">Snowy_day</b> #lgbtq #happy
+           </div>
+        </div>
+          <!-- ___________________________________ #5 FEED ____________________________________________ -->
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div >
+                  <img class="profile-photo" src="dp3.jpg">
+                </div>
+                <div class="ingo">
+                  <h3>_Mario_</h3>
+                  <small>feeling happy  12 mins ago</small>
+                </div>
+                <span class="edit"></span>
+              </div>
+            </div>
+            <div class="photo">
+              <img src="st-8.jpg">
+            </div>
+  
+            <div class="action-btn">
+              <div class="i-btn">
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="far fa-comment"></i></span>
+                <span><i class="fas fa-paper-plane"></i></span>
+              </div>
+              <div class="report">
+                <span><i class="fa fa-solid fa-flag"></i></span>
+              </div>
+            </div>
+            <div class="caption">
+              <b data-name="_Mario_"> _Mario_ </b> #lgbtq #happy
+             </div>
+          </div>
+      </div>
+        <!-- ___________________________________ END OF FEED ____________________________________________ -->
+      </div>
+ 
+      <!-- ___________________________________ RIGHT   ____________________________________________ -->
+      <div id="r" class="r">
+         <div class="events">
+           <div class="heading">
+             <h4><i class="fa fa-solid fa-calendar">&nbsp;</i>INBOX</h4>
+           </div>
+          <!-- ___________________________________ SEARCH________________________________________________ -->
+          <div class="search-bar">
+            <i class="fa fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="search events" id="event-search">
+          </div>
+          <!-- ___________________________________ events_______________________________________________ -->
+          <div class="evt-list">
+            <h6 onclick="showPanel(0)" class="active">messages</i></h6>
+            <h6 onclick="showPanel(1)">Events</h6>
+            <h6 onclick="showPanel(2)" class="evt-notification">Notification</h6>
+          </div>
+          <!-- ___________________________________ chat list________________________________________________ -->          
+         <div class="evt-sec">
+           <div class="event primary active">
+            <div  class="notif-heading">
+              <span class="n-heading">Messages </span> 
+             </div>
+
+             <div class="notif-container">
+              <div class="notif-pop-up">
+                 <div class="notif-img-div">
+                   <img class="notif-img" src="dp1.jpg">
+                 </div>
+                 <div class="notif-body">
+                   <b>RuPaul</b><br>
+                   <small><b>Sent a photo </b>&#8226; 2 hour ago</small>
+                 </div>
+               </div>
+               <div class="notif-pop-up">
+                <div class="notif-img-div">
+                  <img class="notif-img" src="dp3.jpg">
+                </div>
+                <div class="notif-body">
+                  
+                  <b>User123 </b><br>
+                  <small><b>3 unread messages </b>&#8226;2 days ago</small>
+                </div>
+              </div>
+              <div class="notif-pop-up">
+                <div class="notif-img-div">
+                  <img class="notif-img" src="dp4.jpg">
+                </div>
+                <div class="notif-body">
+                  <b>BlueLlamas</b><br>
+                  <small><b>Seen 1h ago </b>&#8226;1 week ago</small>
+                </div>
+              </div>
+              <div class="notif-pop-up">
+                <div class="notif-img-div">
+                  <img class="notif-img" src="dp5.jpg">
+                </div>
+                <div class="notif-body">
+                  <b>whiskers._.</b><br>
+                  <small><b>Sent a message </b>&#8226;1 week ago</small>
+                </div>
+              </div>
+           </div>
+
+
+           </div>
+
+           <div class="event general">
+            <div  class="notif-heading">
+              <span class="n-heading"> Events </span> 
+             </div>
+  
+             <div class="event-container">
+               <div class="event-list">
+                <div class="lines">
+                  <div class="event-line-1">
+                    <small>
+                      <i class="fa fa-solid fa-calendar"></i>
+                      Wed, 16 - Sat, 19 Nov 2022</small>
+                  </div>
+                  <div class="event-line-2">
+                   <b>LGBTQIA+ AWARENESS RALLY</b> 
+                  </div>
+                  <div class="event-line-3">
+                   <small><i class="fas fa-map-marker-alt"></i>
+                           Kolkata, India </small>
+                  </div>
+                 </div>
+                 
+                 <div class="event-pic">
+                   <img src="event1.jpg" height="60x" width="60px">
+                 </div>
+               </div>
+           </div>
+             <br/>
+           <div class="event-container">
+            <div class="event-list">
+             <div class="lines">
+               <div class="event-line-1">
+                 <small>
+                  <i class="fa fa-solid fa-calendar"></i>
+                  Fri, 11 - Sun, 13 Nov 2022</small>
+               </div>
+               <div class="event-line-2">
+                <b>Oakland Black Pride</b> 
+               </div>
+               <div class="event-line-3">
+                <small><i class="fas fa-map-marker-alt"></i>
+                        Oakland, California </small>
+               </div>
+              </div>
+              
+              <div class="event-pic">
+                <img src="event2.jpg" height="70x" width="70px">
+              </div>
+            </div>
+          </div>
+
+          <br/>
+           <div class="event-container">
+            <div class="event-list">
+             <div class="lines">
+               <div class="event-line-1">
+                 <small>
+                  <i class="fa fa-solid fa-calendar"></i>
+                  Mon, 04 - Wed, 06 Jul 2022</small>
+               </div>
+               <div class="event-line-2">
+                <b>Progeny of pride</b> 
+               </div>
+               <div class="event-line-3">
+                <small><i class="fas fa-map-marker-alt"></i>
+                       Mumbai,India </small>
+               </div>
+              </div>
+              
+              <div class="event-pic">
+                <img src="event3.jpg" height="70em" width="70em">
+              </div>
+            </div>
+          </div>
+
+          <br/>
+           <div class="event-container">
+            <div class="event-list">
+             <div class="lines">
+               <div class="event-line-1">
+                 <small>
+                  <i class="fa fa-solid fa-calendar"></i>
+                  Thu, 22 - Sat, 24 Sep 2022</small>
+               </div>
+               <div class="event-line-2">
+                <b>Building Bridges</b> 
+               </div>
+               <div class="event-line-3">
+                <small><i class="fas fa-map-marker-alt"></i>
+                        Dayton, Ohio </small>
+               </div>
+              </div>
+              
+              <div class="event-pic">
+                <img src="event4.jpg" height="70em" width="70em">
+              </div>
+            </div>
+          </div>
+
+          <br/>
+          <div class="event-container">
+           <div class="event-list">
+            <div class="lines">
+              <div class="event-line-1">
+                <small>
+                  <i class="fa fa-solid fa-calendar"></i>
+                  Tue, 31 May - Thu, 02 Jun 2022</small>
+              </div>
+              <div class="event-line-2">
+               <b>Love is Love</b> 
+              </div>
+              <div class="event-line-3">
+               <small><i class="fas fa-map-marker-alt"></i>
+                       Karnataka, India</small>
+              </div>
+             </div>
+             
+             <div class="event-pic">
+               <img src="event5.jpg" height="70em" width="70em">
+             </div>
+           </div>
+         </div>
+
+
+           </div>
+
+           <div class="event notification">
+            
+             <div class="notif-heading">
+              <span class="n-heading"> Notifications</span> 
+             </div>
+  
+             <div class="notif-container">
+              <div class="notif-pop-up">
+                 <div class="notif-img-div">
+                   <img class="notif-img" src="dp1.jpg">
+                 </div>
+                 <div class="notif-body">
+                   <b>RuPaul accepted your friend request</b><br>
+                   <small>2 hour ago</small>
+                 </div>
+               </div>
+               <div class="notif-pop-up">
+                <div class="notif-img-div">
+                  <img class="notif-img" src="dp3.jpg">
+                </div>
+                <div class="notif-body">
+                  
+                  <b>User123 pinned your comment</b><br>
+                  <small>2 days ago</small>
+                </div>
+              </div>
+              <div class="notif-pop-up">
+                <div class="notif-img-div">
+                  <img class="notif-img" src="dp4.jpg">
+                </div>
+                <div class="notif-body">
+                  <b>BlueLlamas liked you post!</b><br>
+                  <small>1 week ago</small>
+                </div>
+              </div>
+              <div class="notif-pop-up">
+                <div class="notif-img-div">
+                  <img class="notif-img" src="dp5.jpg">
+                </div>
+                <div class="notif-body">
+                  <b>whiskers._. liked you post!</b><br>
+                  <small>1 week ago</small>
+                </div>
+              </div>
+           </div>
+         </div>
+
+         
+        </div>
+       </div>
+     </main>
+      <footer>
+
+      </footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
