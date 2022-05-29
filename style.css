@@ -186,8 +186,9 @@ main .container .l .profile{
    font-size: var(--large);
    border-radius: 2%;
 }
-.menu span{
-  
+.menu span:active{
+  color:rgb(108, 108, 228);
+ 
 }
 .notif-body{
     /* text-align: center; */
@@ -309,22 +310,28 @@ form{
     width: 100%;
 }
 .create-post{
-    margin: 20px;
+    margin: 30px;
     height:auto;
     width:90%;
+    border-radius: 10px;
     padding: var(--card-padding);
     padding-bottom: 15px;
     background-color: #ddd6f3;
-    padding-left: 0;
     font-size: var(--medium);
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .create-post img{
-    margin:4px;
+    margin:2em 0.5em 2em 0em;
 }
 .create-post input{
-    height: 20px;
-    width:60%;
+    height:40px;
+    width:50%;
+    border-radius: 10px;
+    border: none;
 }
 
 .create-post button{
@@ -336,7 +343,7 @@ form{
     cursor: pointer;
     font-size: var(--medium);
     font-family: 'Be Vietnam Pro', sans-serif;
-   
+    margin:2em 0em 2em 0.5em;
 }
 /* .story::before{
     height: 10px;
@@ -557,6 +564,10 @@ div.photo{
     width:100%;
     min-height: 50vh;
    display: none;
+}
+
+blue{
+  color: blue;
 }
 
                       /* -----------------------------------events---------------------------------------- */
