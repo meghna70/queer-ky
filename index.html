@@ -287,45 +287,37 @@
              </div>
 
              <div class="notif-container">
-              <div class="notif-pop-up">
-                 <div class="notif-img-div">
-                   <img class="notif-img" src="dp1.jpg">
-                 </div>
-                 <div class="notif-body">
-                   <b>RuPaul</b><br>
-                   <small><b>Sent a photo </b>&#8226; 2 hour ago</small>
-                 </div>
-               </div>
-               <div class="notif-pop-up">
-                <div class="notif-img-div">
-                  <img class="notif-img" src="dp3.jpg">
-                </div>
-                <div class="notif-body">
-                  
-                  <b>User123 </b><br>
-                  <small><b>3 unread messages </b>&#8226;2 days ago</small>
-                </div>
-              </div>
-              <div class="notif-pop-up">
-                <div class="notif-img-div">
-                  <img class="notif-img" src="dp4.jpg">
-                </div>
-                <div class="notif-body">
-                  <b>BlueLlamas</b><br>
-                  <small><b>Seen 1h ago </b>&#8226;1 week ago</small>
-                </div>
-              </div>
-              <div class="notif-pop-up">
-                <div class="notif-img-div">
-                  <img class="notif-img" src="dp5.jpg">
-                </div>
-                <div class="notif-body">
-                  <b>whiskers._.</b><br>
-                  <small><b>Sent a message </b>&#8226;1 week ago</small>
-                </div>
-              </div>
            </div>
+              <chat-card 
+               image =dp1.jpg
+               name="RuPaul"
+               event="Sent a photo "
+               time="2 hour ago">
+               </chat-card>
 
+              <chat-card 
+               image =dp3.jpg
+               name="User123"
+               event="3 unread messages "
+               time="2 days ago">
+              </chat-card>
+
+   
+               <chat-card 
+               image =dp4.jpg
+               name="BlueLlamas"
+               event="Seen 1h ago"
+               time="1 week ago">
+               </chat-card>
+
+   
+     
+               <chat-card 
+               image =dp5.jpg
+               name="whiskers._."
+               event="Seen 1h ago"
+               time="1 week ago">
+              </chat-card>
 
            </div>
 
@@ -512,4 +504,5 @@
 </body>
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="feed.js"></script>
+<script type="text/javascript" src="chat.js"></script>
 </html>
