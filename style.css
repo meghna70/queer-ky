@@ -352,6 +352,14 @@ form{
     background-color: #4BC0C8;
 } */
 
+.menu-container{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* .menu-container:nth-child(1) */
 
 
 /* --------------------------------upload modal---------------------------------------- */
@@ -503,7 +511,7 @@ div.photo{
 .r  .events{
     width: 100%;
     background: white;
-    border-radius: 1rem;
+   
     padding:var(--card-padding);
 }
 
